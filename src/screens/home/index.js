@@ -1,10 +1,11 @@
 import { StyleSheet, View } from "react-native";
-import {Header} from "./components";
+import {Header, Stories} from "./components";
 
 export default function Home(props) {
     return (
         <View style={styles.container}>
             <Header />
+            <Stories />
         </View>
     );
 }
