@@ -1,11 +1,18 @@
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, ScrollView } from "react-native";
 import {Header, Stories} from "./components";
+import {Post} from '../../components';
+import {posts} from '../../api';
 
 export default function Home(props) {
     return (
         <View style={styles.container}>
             <Header />
-            <Stories />
+            <ScrollView showsVerticalScrollIndicator={false}>
+                <Stories />
+                {posts.map((post) => (
+                    <Post key={post.id} post={post} />
+                ))}
+            </ScrollView>
         </View>
     );
 }

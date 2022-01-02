@@ -163,7 +163,7 @@ export function CommentIcon({size = 24, fill, ...props}) {
     )
 }
 
-export function MessageIcon({size = 24, fill, ...props}) {
+export function SendIcon({size = 24, fill, ...props}) {
     return (
         <Svg height={size} role="img" viewBox="0 0 24 24" width={size} {...props}>
             <Line fill="none" stroke={fill} strokeLinejoin="round" strokeWidth="2" x1="22" x2="9.218"

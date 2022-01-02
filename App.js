@@ -20,6 +20,7 @@ import {
 } from "./src/icons";
 
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import {StatusBar} from "expo-status-bar";
 const Tab = createBottomTabNavigator();
 
 const screenOptions = {
@@ -34,6 +35,7 @@ export default function App() {
   return (
     <NavigationContainer>
         <SafeAreaView style={{flex: 1}}>
+            <StatusBar style="dark" />
             <Tab.Navigator screenOptions={screenOptions}>
                 <Tab.Screen
                     name="home"
